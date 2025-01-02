@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* Resetting default styling for nav ul */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex; /* Turn the ul into a flex container */
+  justify-content: center; /* Center the menu horizontally */
+}
+
+/* Styling the links inside the li elements */
+nav ul li a {
+  display: block; /* Make each link a block element */
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em; /* Add space around the links */
+  margin: .5em; /* Add space between links */
+}
+
+/* Styling for the #menu container */
+#menu {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: center; /* Center menu items */
+  margin-top: 20px;
+}
+
+/* Individual menu items styled as flex containers */
+section.dish {
+  background: #F6F3ED;
+  margin: 10px;
+  padding: 20px;
+  border: 1px dotted maroon;
+  width: 240px; /* Set a fixed width for the dishes */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  flex: auto; /* Make each section flexible */
+}
+
+/* Align the price buttons at the bottom */
+.price {
+  margin-top: auto;
+}
+
+/* Move the image to the top of each section */
+.photo {
+  order: -1; /* Set image to appear first */
+}
+/* CSS Document */
+
